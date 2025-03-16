@@ -97,6 +97,7 @@ nav a {
     border-radius: 5px;
     text-decoration: none;
     transition-duration: 0.2s;
+    display: flex;
 }
 nav a:hover {
     background-color: var(--cor3);
