@@ -72,7 +72,7 @@ header h1 {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.521);
 }
 
-header  p {
+header > p, p#sub {
     font-family: var(--fonte-padrao);
   font-size: 1.2em;  
   color: white;
@@ -85,11 +85,28 @@ header  p {
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);  
 }
 
+p#icon {
+    margin-bottom: 0px ;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+span  {
+    color: white;
+    background-color: #063d1e;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+}
+
 nav {
-    background-color: var(--cor5);
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.37);
-    display: flex;
+    display: block;
 }
 nav a {
     color: var(--cor1);
@@ -97,7 +114,7 @@ nav a {
     border-radius: 5px;
     text-decoration: none;
     transition-duration: 0.2s;
-    display: flex;
+    display: block;
 }
 nav a:hover {
     background-color: var(--cor3);
