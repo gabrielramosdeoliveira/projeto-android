@@ -151,6 +151,10 @@ span#fechar {
 }
 
 @media screen and (max-width: 585px) {
+    body, main {
+        width: 100%;
+    }
+
     span#abrir, span#fechar {
         display: block;
     }
