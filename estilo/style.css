@@ -93,7 +93,7 @@ span  {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     display: flex;
 }
 
@@ -109,14 +109,10 @@ nav {
 
 nav a {
     display: flex;
-}
-
-nav a {
-    display: flex;
     color: white;
     padding: 1em 2em;
     text-decoration: none;
-    transition-duration: 0.2s;
+    transition-duration: 150ms;
     width: 100%;
 }
 nav a:hover {
@@ -151,25 +147,24 @@ span#fechar {
 }
 
 @media screen and (max-width: 585px) {
-    body, main {
-        width: 100%;
-    }
-
     span#abrir, span#fechar {
         display: block;
     }
+
+main{
+    padding: min(5em, 7%);
+}
+
     nav {
         background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
         position: fixed;
         top: 0;
         right: -100%;
         height: 100vh;
-        width: min(15em, 100%);
+        width: 0px;
         z-index: 10;
-        border-left: 1px solid rgba(0, 0, 0, 0.199);
-    }
-    nav.show{
-        right: 0;
+        border-left: 1px solid rgba(0, 0, 0, 0.233);
+        transition: 300ms ease-out;
     }
 
     nav.show ~ #overlay{
@@ -180,11 +175,16 @@ span#fechar {
         width: 100%;
         flex-direction: column;
     }
+
+    nav a{
+        width: 100%;
+    }
 }
 
 nav.show{
-    right: 0;
-}
+        right: 0;
+        width: min(15em, 100em);
+    }
 
 main {
     background-color: white;

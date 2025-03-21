@@ -17,18 +17,18 @@
         <h1>Curiosidades de Tecnologia</h1>
         <p id="sub">Tudo aquilo que vc sempre quis saber sobre o mundo tech em um único lugar</p>
     
-        <span id="abrir" class="material-symbols-outlined" onclick="abrirmenu()">menu</span>
+        <span id="abrir" class="material-symbols-outlined" onclick="abrirmenu()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">menu</span>
 
-    <nav id="navbar">
+    <nav id="navbar" hidden>
     <ul>
-        <li><span id="fechar" class="material-symbols-outlined" onclick="fecharmenu()">x</span></li>
-        <li class="home-li"><a href="#">Home</a></li>
+        <li><span id="fechar" class="material-symbols-outlined" onclick="fecharmenu()" aria-label="close sidebar">x</span></li>
+        <li class="home-li" ><a href="#">Home</a></li>
         <li><a href="#">Notícias</a></li>
         <li><a href="#">Curiosidades</a></li>
         <li><a href="#">Fale Conosco</a></li>
     </ul>
     </nav>
-    <div id="overlay" onclick="fecharmenu()"></div>
+    <div id="overlay" onclick="fecharmenu()" aria-hidden="true"></div>
 </header>
 <main>
     <article>
