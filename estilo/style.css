@@ -74,7 +74,7 @@ header h1 {
 }
 
 header > p, p#sub {
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-destaque);
   font-size: 1.2em;  
   color: white;
   max-width: 600px;

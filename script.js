@@ -9,10 +9,10 @@ function updateNavbar(e){
     const isMobile = e.matches
     console.log(isMobile)
     if(isMobile){
-        navbar.setAttribute('innert', '')
+        navbar.setAttribute("inert", "")
     }
     else {
-        navbar.removeAttribute('inert')
+        navbar.removeAttribute("inert")
     }
 }
 
