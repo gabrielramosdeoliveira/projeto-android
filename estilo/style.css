@@ -89,102 +89,41 @@ header > p, p#sub {
 span  {
     color: white;
     background-color: #063d1e;
-    display: inline-block;
+    display: block;
+    padding: 10px;
 }
 
-nav ul {
+span:hover {
+    color: #063d1e;
+    background-color: white;
+}
+
+menu ul {
     list-style: none;
-    display: flex;
 }
 
-nav .home-li {
-    margin-right: auto;
-}
-
-nav {
+menu {
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.37);
-    display: block;
+    display: none;
 }
 
-nav a {
-    display: flex;
+menu a {
+    display: block;
     color: white;
-    padding: 1em 2em;
     text-decoration: none;
+    padding: 10px;
     transition-duration: 150ms;
-    width: 100%;
 }
-nav a:hover {
+menu a:hover {
     background-color: var(--cor3);
     color: var(--cor4);
 }
 
 span#abrir {
-    display: none;
     background: none;
-    border: none;
-    padding: 1em;
-    margin-left: 65vh;
     cursor: pointer;
 }
-
-span#fechar {
-    display: none;
-    background: none;
-    border: none;
-    padding: 1em;
-    cursor: pointer;
-    margin-left: 25vh;
-}
-
-#overlay{
-    background: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    inset: 0;
-    z-index: 9;
-    display: none;
-}
-
-@media screen and (max-width: 585px) {
-    span#abrir, span#fechar {
-        display: block;
-    }
-
-main{
-    padding: min(5em, 7%);
-}
-
-    nav {
-        background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
-        position: fixed;
-        top: 0;
-        right: -100%;
-        height: 100vh;
-        width: 0px;
-        z-index: 10;
-        border-left: 1px solid rgba(0, 0, 0, 0.233);
-        transition: 300ms ease-out;
-    }
-
-    nav.show ~ #overlay{
-        display: block;
-    }
-
-    nav ul{
-        width: 100%;
-        flex-direction: column;
-    }
-
-    nav a{
-        width: 100%;
-    }
-}
-
-nav.show{
-        right: 0;
-        width: min(15em, 100em);
-    }
 
 main {
     background-color: white;
